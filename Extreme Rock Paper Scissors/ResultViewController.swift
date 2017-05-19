@@ -11,6 +11,8 @@ import UIKit
 class ResultViewController: UIViewController {
 
     var yourChoice: Int!
+    var win: Bool = false
+    var winStreak: Int!
     
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var resultImage: UIImageView!
@@ -22,22 +24,40 @@ class ResultViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as! ChoiceViewController
+        if win{
+            if winStreak < 0{
+                controller.winStreak = 1
+            }else{
+                controller.winStreak = winStreak + 1
+            }
+        }else{
+             if winStreak > 0{
+                controller.winStreak = -1
+             }else{
+                controller.winStreak = winStreak - 1
+            }
+        }
+    }
+    
+    //MARK: Probabilidades de ganar
+    //Seria muy aburrido que fuera un juego justo
+    
     func result(){
-        let randomValue = arc4random() % 101
-        if randomValue >= 98{
+        let randomValue = 1 + arc4random() % 100
+        if randomValue >= 97{
             descriptionLabel.text = createAWin(choice: yourChoice)
             resultLabel.text = "YOU WIN"
-            resultLabel.textColor = UIColor.red
-        }else if randomValue >= 93{
+            win = true
+        }else if randomValue >= 90{
             descriptionLabel.text = createATie(choice: yourChoice)
-            resultLabel.text = "IT'S A TIE, actually is like a lose"
+            resultLabel.text = "IT'S A TIE \n actually is like a lose"
         }else{
             descriptionLabel.text = createALose(choice: yourChoice)
             resultLabel.text = "YOU LOSE"
-            resultLabel.textColor = UIColor.blue
         }
     }
     
@@ -46,13 +66,13 @@ class ResultViewController: UIViewController {
         switch Choice(rawValue: choice)! {
             case .rock:
                 result = "rock is covered by paper"
-                resultImage.image = UIImage(named: "PaperCoversRock")
+                winingImage(winner: Choice.paper.rawValue)
             case .paper:
                 result = "paper is cut by scissors"
-                resultImage.image = UIImage(named: "ScissorsCutPaper")
+                winingImage(winner: Choice.scissors.rawValue)
             case .scissors:
-                result = "scissors are broke by the rock"
-                resultImage.image = UIImage(named: "RockCrushesScissors")
+                result = "scissors are crushed by the rock"
+                winingImage(winner: Choice.rock.rawValue)
         }
         return result
     }
@@ -62,14 +82,12 @@ class ResultViewController: UIViewController {
         switch Choice(rawValue: choice)! {
         case .rock:
             result = "Rock to rock"
-            resultImage.image = UIImage(named: "itsATie")
         case .paper:
             result = "Paper to paper"
-            resultImage.image = UIImage(named: "itsATie")
         case .scissors:
             result = "Scissors to scissors"
-            resultImage.image = UIImage(named: "itsATie")
         }
+        resultImage.image = #imageLiteral(resourceName: "itsATie")
         return result
     }
     
@@ -78,15 +96,23 @@ class ResultViewController: UIViewController {
         switch Choice(rawValue: choice)! {
         case .rock:
             result = "Rock breaks scissors"
-            resultImage.image = UIImage(named: "RockCrushesScissors")
         case .paper:
             result = "Paper covers rock"
-            resultImage.image = UIImage(named: "PaperCoversRock")
         case .scissors:
             result = "Scissors cuts paper"
-            resultImage.image = UIImage(named: "ScissorsCutPaper")
         }
+        winingImage(winner: choice)
         return result
     }
-
+    
+    func winingImage(winner: Int){
+        switch Choice(rawValue: winner)! {
+        case .rock:
+            resultImage.image = #imageLiteral(resourceName: "RockCrushesScissors")
+        case .paper:
+            resultImage.image = #imageLiteral(resourceName: "PaperCoversRock")
+        case .scissors:
+            resultImage.image = #imageLiteral(resourceName: "ScissorsCutPaper")
+        }
+    }
 }

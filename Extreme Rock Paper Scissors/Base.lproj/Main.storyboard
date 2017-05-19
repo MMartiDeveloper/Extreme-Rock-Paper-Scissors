@@ -6,13 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Intro View Controller-->
         <scene sceneID="oLP-Ve-zlN">
             <objects>
-                <viewController id="IUy-fA-H7f" sceneMemberID="viewController">
+                <viewController id="IUy-fA-H7f" customClass="IntroViewController" customModule="Extreme_Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gHR-Rs-8Qa"/>
                         <viewControllerLayoutGuide type="bottom" id="tWs-0N-xyb"/>
@@ -22,33 +24,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXTREME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekI-Ar-egI">
-                                <rect key="frame" x="6" y="122" width="308" height="75"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="59"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="11.5" y="122" width="297" height="72"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="57"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock  Paper Scissors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55l-mQ-HBF">
-                                <rect key="frame" x="34.5" y="224" width="252.5" height="33"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <rect key="frame" x="30.5" y="221" width="259" height="28"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only the 3% of people wins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1T-Mk-DUl">
-                                <rect key="frame" x="57" y="291" width="207.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="44.5" y="283" width="231" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="are you though enoght?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ql5-8H-cax">
-                                <rect key="frame" x="69" y="323" width="182" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you brave enough?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ql5-8H-cax">
+                                <rect key="frame" x="62" y="318" width="196" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjQ-Ko-wGd">
-                                <rect key="frame" x="134.5" y="370" width="52" height="32"/>
+                                <rect key="frame" x="115.5" y="366.5" width="89" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="I AM!">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -58,7 +60,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.67049103975296021" green="0.031120745465159416" blue="0.019413057714700699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sjQ-Ko-wGd" firstAttribute="centerX" secondItem="2u4-DO-Zfe" secondAttribute="centerX" id="Jdc-m1-g1l"/>
                             <constraint firstItem="f1T-Mk-DUl" firstAttribute="top" secondItem="55l-mQ-HBF" secondAttribute="bottom" constant="34" id="LdM-pg-5bb"/>
@@ -77,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="-598.125" y="36.25"/>
         </scene>
-        <!--View Controller-->
+        <!--Choice View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Extreme_Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ChoiceViewController" customModule="Extreme_Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -89,25 +91,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y95-v6-1dW">
-                                <rect key="frame" x="122.5" y="91.5" width="75" height="65"/>
-                                <state key="normal" image="paper"/>
-                                <connections>
-                                    <action selector="paperChoice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzb-bH-Fih"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="1vA-wm-8bX">
-                                <rect key="frame" x="35" y="207.5" width="250" height="65"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1vA-wm-8bX">
+                                <rect key="frame" x="15.5" y="189" width="289" height="214"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ege-D9-OjG">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="214"/>
                                         <state key="normal" image="rock"/>
                                         <connections>
                                             <action selector="rockChoice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gcz-5D-e3i"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNk-JQ-MnQ">
-                                        <rect key="frame" x="175" y="0.0" width="75" height="65"/>
+                                        <rect key="frame" x="180" y="0.0" width="109" height="214"/>
                                         <state key="normal" image="scissors"/>
                                         <connections>
                                             <segue destination="Yk8-kG-23J" kind="show" identifier="scissorsChoice" id="L6b-Z5-oia"/>
@@ -115,24 +110,40 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You wanna have a bad time?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI8-38-owY">
-                                <rect key="frame" x="52" y="353.5" width="216.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE OR DIE!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI8-38-owY">
+                                <rect key="frame" x="20" y="428" width="280" height="39.5"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y95-v6-1dW">
+                                <rect key="frame" x="43" y="28" width="234" height="167"/>
+                                <state key="normal" image="paper"/>
+                                <connections>
+                                    <action selector="paperChoice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzb-bH-Fih"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Win streak: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKz-g3-Ihe">
+                                <rect key="frame" x="110" y="399.5" width="100.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.67049103975296021" green="0.031120745465159416" blue="0.019413057714700699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1vA-wm-8bX" firstAttribute="top" secondItem="Y95-v6-1dW" secondAttribute="bottom" constant="51" id="Dkv-Sf-NEh"/>
-                            <constraint firstItem="wI8-38-owY" firstAttribute="top" secondItem="1vA-wm-8bX" secondAttribute="bottom" constant="81" id="Hrd-Tp-hEY"/>
+                            <constraint firstItem="wI8-38-owY" firstAttribute="top" secondItem="1vA-wm-8bX" secondAttribute="bottom" constant="25" id="Hrd-Tp-hEY"/>
+                            <constraint firstItem="1vA-wm-8bX" firstAttribute="top" secondItem="Y95-v6-1dW" secondAttribute="bottom" constant="-6" id="Nom-Nu-hBc"/>
                             <constraint firstItem="Y95-v6-1dW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OpR-j6-ubT"/>
                             <constraint firstItem="wI8-38-owY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OuU-ZL-Drd"/>
-                            <constraint firstItem="1vA-wm-8bX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WpW-wQ-aGY"/>
+                            <constraint firstItem="1vA-wm-8bX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="56" id="WpW-wQ-aGY"/>
+                            <constraint firstItem="wI8-38-owY" firstAttribute="top" secondItem="xKz-g3-Ihe" secondAttribute="bottom" constant="8" id="dxI-NL-3UX"/>
                             <constraint firstItem="1vA-wm-8bX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kf9-tI-hIl"/>
+                            <constraint firstItem="xKz-g3-Ihe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s7H-iC-1NZ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="winStreakLabel" destination="xKz-g3-Ihe" id="u8H-mv-fKg"/>
                         <segue destination="Yk8-kG-23J" kind="show" identifier="paperChoice" id="DAS-QO-s0m"/>
                     </connections>
                 </viewController>
@@ -152,10 +163,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ngi-rz-auT">
-                                <rect key="frame" x="40" y="110" width="240" height="128"/>
+                                <rect key="frame" x="50" y="48" width="230" height="190"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="AHN-Fa-Kxx"/>
-                                    <constraint firstAttribute="width" constant="240" id="lUr-9E-XOC"/>
+                                    <constraint firstAttribute="width" secondItem="Ngi-rz-auT" secondAttribute="height" multiplier="15:8" constant="-126.5" id="Zbe-WQ-XYC"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNm-2z-T2z">
@@ -164,15 +174,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emk-Yt-7lv">
-                                <rect key="frame" x="139" y="339" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emk-Yt-7lv">
+                                <rect key="frame" x="130" y="339" width="60" height="26"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7g-Hy-idt">
-                                <rect key="frame" x="124.5" y="391" width="71" height="30"/>
+                                <rect key="frame" x="96" y="396" width="129" height="39"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
                                 <state key="normal" title="Play Again">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -181,16 +192,17 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.67049103975296021" green="0.031120745465159416" blue="0.019413057714700699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ngi-rz-auT" firstAttribute="centerX" secondItem="wcz-G3-JV9" secondAttribute="centerX" id="9Dj-Dh-CjF"/>
+                            <constraint firstItem="Ngi-rz-auT" firstAttribute="centerX" secondItem="wcz-G3-JV9" secondAttribute="centerX" constant="5" id="9Dj-Dh-CjF"/>
                             <constraint firstItem="emk-Yt-7lv" firstAttribute="top" secondItem="SNm-2z-T2z" secondAttribute="bottom" constant="34" id="CPd-eP-LjV"/>
                             <constraint firstItem="emk-Yt-7lv" firstAttribute="centerX" secondItem="SNm-2z-T2z" secondAttribute="centerX" id="MzX-Ev-syb"/>
                             <constraint firstItem="f7g-Hy-idt" firstAttribute="top" secondItem="emk-Yt-7lv" secondAttribute="bottom" constant="31" id="Rka-33-DlM"/>
-                            <constraint firstItem="Ngi-rz-auT" firstAttribute="top" secondItem="Ph6-dr-8o3" secondAttribute="bottom" constant="90" id="RlG-mY-VTB"/>
+                            <constraint firstItem="Ngi-rz-auT" firstAttribute="top" secondItem="Ph6-dr-8o3" secondAttribute="bottom" constant="28" id="RlG-mY-VTB"/>
                             <constraint firstItem="SNm-2z-T2z" firstAttribute="top" secondItem="Ngi-rz-auT" secondAttribute="bottom" constant="46" id="TEt-8R-C3J"/>
                             <constraint firstItem="SNm-2z-T2z" firstAttribute="centerX" secondItem="f7g-Hy-idt" secondAttribute="centerX" id="j0k-Gb-3aI"/>
-                            <constraint firstItem="SNm-2z-T2z" firstAttribute="centerX" secondItem="Ngi-rz-auT" secondAttribute="centerX" id="wat-my-kRX"/>
+                            <constraint firstItem="SNm-2z-T2z" firstAttribute="centerX" secondItem="Ngi-rz-auT" secondAttribute="centerX" constant="-5" id="wat-my-kRX"/>
+                            <constraint firstItem="Ngi-rz-auT" firstAttribute="leading" secondItem="wcz-G3-JV9" secondAttribute="leadingMargin" constant="34" id="yP9-Hn-cvo"/>
                         </constraints>
                     </view>
                     <connections>
@@ -201,16 +213,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ild-C8-vVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776.25" y="40"/>
+            <point key="canvasLocation" x="775.36231884057975" y="39.945652173913047"/>
         </scene>
     </scenes>
     <resources>
-        <image name="paper" width="75" height="65"/>
-        <image name="rock" width="75" height="65"/>
-        <image name="scissors" width="75" height="65"/>
+        <image name="paper" width="234" height="167"/>
+        <image name="rock" width="150" height="144"/>
+        <image name="scissors" width="109" height="214"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DAS-QO-s0m"/>
         <segue reference="Bux-xe-NLW"/>
+        <segue reference="DAS-QO-s0m"/>
     </inferredMetricsTieBreakers>
 </document>
