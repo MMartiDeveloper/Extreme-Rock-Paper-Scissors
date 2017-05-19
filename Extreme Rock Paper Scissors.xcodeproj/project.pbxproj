@@ -12,6 +12,8 @@
 		441C51E21ECF0197003CE5B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441C51E01ECF0197003CE5B8 /* Main.storyboard */; };
 		441C51E41ECF0197003CE5B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 441C51E31ECF0197003CE5B8 /* Assets.xcassets */; };
 		441C51E71ECF0197003CE5B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441C51E51ECF0197003CE5B8 /* LaunchScreen.storyboard */; };
+		441C51EF1ECF0A75003CE5B8 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C51EE1ECF0A75003CE5B8 /* ResultViewController.swift */; };
+		441C51F11ECF118B003CE5B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C51F01ECF118B003CE5B8 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		441C51E31ECF0197003CE5B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		441C51E61ECF0197003CE5B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		441C51E81ECF0197003CE5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		441C51EE1ECF0A75003CE5B8 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		441C51F01ECF118B003CE5B8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				441C51DC1ECF0197003CE5B8 /* AppDelegate.swift */,
 				441C51DE1ECF0197003CE5B8 /* ViewController.swift */,
+				441C51F01ECF118B003CE5B8 /* Constants.swift */,
+				441C51EE1ECF0A75003CE5B8 /* ResultViewController.swift */,
 				441C51E01ECF0197003CE5B8 /* Main.storyboard */,
 				441C51E31ECF0197003CE5B8 /* Assets.xcassets */,
 				441C51E51ECF0197003CE5B8 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			files = (
 				441C51DF1ECF0197003CE5B8 /* ViewController.swift in Sources */,
 				441C51DD1ECF0197003CE5B8 /* AppDelegate.swift in Sources */,
+				441C51EF1ECF0A75003CE5B8 /* ResultViewController.swift in Sources */,
+				441C51F11ECF118B003CE5B8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
