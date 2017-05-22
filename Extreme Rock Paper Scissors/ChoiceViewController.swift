@@ -47,7 +47,7 @@ class ChoiceViewController: UIViewController {
         let controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
 
         controller.yourChoice = Choice.rock.rawValue
-        
+        controller.winStreak = self.winStreak
         present(controller, animated: true, completion: nil)
     }
 }
